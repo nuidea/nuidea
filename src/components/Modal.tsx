@@ -32,7 +32,7 @@ export default function Modal({ children, className }: { children: React.ReactNo
       </button>
 
       <Transition appear show={isOpen}>
-        <Dialog as="div" className="relative z-20 focus:outline-none" onClose={() => setIsOpen(false)}>
+        <Dialog as="div" className="relative z-30 focus:outline-none" onClose={() => setIsOpen(false)}>
           <div className="fixed inset-0 z-20 w-screen overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4">
               <TransitionChild enter="ease-out duration-100" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
