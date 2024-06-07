@@ -1,0 +1,16 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+import Prices from '../components/Prices.astro';
+import Plans from '../components/Plans.astro'
+import Questions from '../components/Questions.astro';
+---
+
+<DefaultLayout>
+    <title slot="header">Prices Nuidea</title>
+
+    <div class="max-w-screen-xl mx-auto px-5">
+        <Prices/>
+        <Plans/>
+        <Questions/>
+    </div>
+</DefaultLayout>
